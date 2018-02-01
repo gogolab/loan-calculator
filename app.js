@@ -13,7 +13,7 @@ function calculateResutls(e) {
 
     const principal = parseFloat(UIamount.value);
     const calculatedInterest = parseFloat(UIinterest.value) / 100 / 12;
-    const calculatedPayments = parseFloat(years.value) * 12;
+    const calculatedPayments = parseFloat(UIyears.value) * 12;
 
     const x = Math.pow(1 + calculatedInterest, calculatedPayments);
     const monthly = (principal * x * calculatedInterest) / (x - 1);
